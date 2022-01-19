@@ -143,6 +143,17 @@ main {
     border-radius: 6px;
 }
 
+/* validations */
+.error {
+    width: 100%;
+    text-align: end;
+    font-size: 12px;
+    color: var(--primary-color);
+    margin-top: -16px;
+    margin-bottom: 16px;
+    font-style: italic;
+}
+
 @media (max-width: 900px) {
     body {
         background-image: url(../images/bg-intro-mobile.png);
