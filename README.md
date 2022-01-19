@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/css-grid-javascript-f6nobh6FE](https://www.frontendmentor.io/solutions/css-grid-javascript-f6nobh6FE)
+- Live Site URL: [https://hansmboron.github.io/signup-form/](https://hansmboron.github.io/signup-form/)
 
 ## My process
 
@@ -48,7 +48,7 @@ Users should be able to:
 
 ### What I learned
 
-This challenge helped me train and improve my skills with CSS, learning how to use CSS Grid and add an icon inside the &lt;input&gt; tag.
+This challenge helped me train and improve my skills with CSS, learning how to use CSS Grid and add an icon inside the `input` tag.
 
 ```html
 <form class="form" id="form" method="post">
@@ -72,7 +72,7 @@ function removeErrorIcon(input) {
 
 ### Useful resources
 
-- [Example resource 1](https://stackoverflow.com/questions/16907518/css-input-with-width-100-goes-outside-parents-bound/16907625) - This helped me correcting a bug with the the input that having a width of 100%, took up too much space leaving the components misaligned 
+- [https://stackoverflow.com](https://stackoverflow.com/questions/16907518/css-input-with-width-100-goes-outside-parents-bound/16907625) - This helped me correcting a bug with the the `input` that having a width of 100% took up too much space leaving the components misaligned.
 
 ## Author
 
