@@ -143,7 +143,6 @@ main {
     border-radius: 6px;
 }
 
-/* validations */
 .error {
     width: 100%;
     text-align: end;
@@ -153,6 +152,11 @@ main {
     margin-bottom: 16px;
     font-style: italic;
 }
+
+.error-icon {
+    background: url(../images/icon-error.svg) no-repeat 93%;
+}
+
 
 /* responsive */
 @media (max-width: 900px) {

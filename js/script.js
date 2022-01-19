@@ -30,27 +30,33 @@ form.addEventListener('submit', e => {
     if (first_name_value === '' || first_name_value == null) {
         first_name_error = 'First Name cannot be empty';
         first_name.style.borderColor = 'hsl(0, 100%, 74%)';
+        addErrorIcon(first_name);
     }
 
     if (last_name_value === '' || last_name_value == null) {
         last_name_error = 'Last Name cannot be empty';
         last_name.style.borderColor = 'hsl(0, 100%, 74%)';
+        addErrorIcon(last_name);
     }
 
     if (email_value === '' || email_value == null) {
         email_error = 'Email cannot be empty';
         email.style.borderColor = 'hsl(0, 100%, 74%)';
+        addErrorIcon(email);
     } else if (!isValidEmail(email_value)) {
         email_error = 'Looks like this is not an email';
         email.style.borderColor = 'hsl(0, 100%, 74%)';
+        addErrorIcon(email);
     }
 
     if (password_value === '' || password_value == null) {
         password_error = 'Password cannot be empty';
         password.style.borderColor = 'hsl(0, 100%, 74%)';
+        addErrorIcon(password);
     } else if (password_value.length < 8) {
         password_error = 'Password must have at least 8 characters';
         password.style.borderColor = 'hsl(0, 100%, 74%)';
+        addErrorIcon(password);
     }
 
     if (first_name_error || last_name_error || email_error || password_error) {
@@ -72,6 +78,18 @@ function resetErrorMessages() {
     last_name_message.innerText = null;
     email_message.innerText = null;
     password_message.innerText = null;
+    removeErrorIcon(first_name);
+    removeErrorIcon(last_name);
+    removeErrorIcon(email);
+    removeErrorIcon(password);
+}
+
+function addErrorIcon(input) {
+    input.classList.add('error-icon');
+}
+
+function removeErrorIcon(input) {
+    input.classList.remove('error-icon');
 }
 
 const isValidEmail = email => {
