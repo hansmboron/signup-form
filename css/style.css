@@ -154,6 +154,7 @@ main {
     font-style: italic;
 }
 
+/* responsive */
 @media (max-width: 900px) {
     body {
         background-image: url(../images/bg-intro-mobile.png);
